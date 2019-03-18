@@ -321,7 +321,7 @@ sub MetasysSyslogListener_Read
     <b>Define</b><br>
     <code>define &lt;name&gt; MetasysSyslogListener &lt;LOCAL IP&gt; &lt;LOCAL PORT&gt;</code>
     <br><br>
-    Example: <code>define mySyslogListener SyslogListener 0.0.0.0 6000</code><br>
+    Example: <code>define myMetasysSyslogListener MetasysSyslogListener 0.0.0.0 6000</code><br>
     <br>
     This will listen on port 6000 on all local interfaces. If you want to listen to the normal syslog port 514
     make sure FHEM is allowed to open ports < 1024.<br/><br/>
@@ -332,7 +332,7 @@ sub MetasysSyslogListener_Read
         in the include attribute. In exclude mode use the exclude attribute to exclude host:application combinations.
         </li>
         <li>include|exclude <br/> append all the host:application combinations you want to include/exclude separated by a comma. <br/>
-        Examble: <code>attr mySyslogListener include fhem:dhcpd,*:kern,fhem:*</code>
+        Examble: <code>attr myMetasysSyslogListener include fhem:dhcpd,*:kern,fhem:*</code>
         </li>
     </ul>
 </ul>
